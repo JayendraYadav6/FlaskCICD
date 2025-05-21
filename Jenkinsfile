@@ -7,7 +7,7 @@
         stages {
             stage('Clone Repository') {
                 steps {
-                    git branch: 'main', url: 'https://github.com/JayendraYadav6/FlaskCICD.git'
+                    git 'https://github.com/JayendraYadav6/FlaskCICD.git'
                 }
             }
             stage('Build Docker Image') {
